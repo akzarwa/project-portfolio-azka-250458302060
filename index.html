@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/media/duck_icon-removebg-preview (1).png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<style>
+    .font-azka {
+        font-family: "DM Sans", sans-serif;
+    }
+    .text-color {
+            color: #3D74B6;
+            color: #FBF5DE;
+            color: #DC3C22;
+            color: #EAC8A6;
+        }
+</style>
+<body>
+    <nav 
+    class="sticky top-0 z-50 bg-[#CFAB8D] backdrop-blur border-b border-slate-300" aria-label="primary">
+    <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
+        <!-- untuk menu laptop -->
+         <div class="flex items-center justify-between h-16">
+            <a href="#" class="flex items-center text-[#fff] text-3xl font-azka uppercase tracking-wider font-bold">Azka</a>
+
+            <button
+            id="hamburger"
+            class="md:hidden p-2 mt-5 rounded hover:text-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-50"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle menu">
+            <svg
+              id="icon-open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+            <div id="main-menu" class="hidden md:flex md:items-center md:gap-2">
+                <div class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left">
+                    <a href="#AboutMe" class="px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">About Me</a>
+                    <a href="#whatIDo" class="px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">What I Do</a>
+                    <a href="#Portfolio" class="px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">Portfolio</a>
+                    <a href="#Skill" class="px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">Skill</a>
+                    <a href="#Blog" class="px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">Blog</a>
+                    <a href="#Contact Me" class="bg-[#DC3C22] hover:bg-[#3D74B6] rounded-xl px-4 py-2 font-azka font-bold text-slate-50 justify-center items-center">Contact Me</a>
+                </div>
+            </div>
+            <!-- Menu Untuk Hp -->
+             <div id="mobile-panel" class="md:hidden hidden border-t border-blue-200 py-2">
+                    <a href="#" class="block px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">About Me</a>
+                    <a href="#" class="block px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">What I Do</a>
+                    <a href="#" class="block px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">Portfolio</a>
+                    <a href="#Skill" class="block px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">Skill</a>
+                    <a href="#Blog" class="blok px-3 py-2 text-slate-50 hover:text-amber-100 uppercase font-azka font-bold">Blog</a>
+                    <a href="#Contact Me" class="block bg-[#DC3C22] hover:bg-[#3D74B6] rounded-xl px-4 py-2 font-azka font-bold text-slate-50 justify-center items-center">Contact Me</a>
+             </div>
+         </div>
+    </div>
+    </nav>
+
+    <section id="AboutMe" class="bg-[#FBF5DE]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-center">
+            <div class="order-2 lg:order-2 border-[12px] sm:border-[16px] border-[#3D74B6] rounded-2xl shadow-2xl overflow-hidden">
+                <img src="/media/Judgmental Duck _ Digital Print _ kawaii journal.jpeg" class="w-full h-full object-cover" alt="">
+            </div>
+
+            <div class="order-1 lg:order-1">
+                <h1 class="font-azka text-5xl font-bold leading-tight text-[#3D74B6]">Hello, I'm <span class="text-[#DC3C22]">Azka</span></h1>
+                <h2 class="font-azka text-2xl font-bold leading-tight text-[#3D74B6]">Web / Mobile Developer</h2>
+                <p class="mt-5 leading-relaxed text-[#3D74B6] font-azka">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem id nostrum est ipsa distinctio repudiandae quod velit asperiores ipsam, vero in quasi, eos obcaecati pariatur temporibus beatae! Perspiciatis, atque?</p>
+
+                <div class="mt-6 flex flex-wrap items-center gap-4">
+                    <a href="" class="inline-flex items-center justify-center rounded-lg bg-[#DC3C22] hover:bg-[#3D74B6] text-white px-4 py-3 text-2xl"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="" class="inline-flex items-center justify-center rounded-lg bg-[#DC3C22] hover:bg-[#3D74B6] text-white px-4 py-3 text-2xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="inline-flex items-center justify-center rounded-lg bg-[#DC3C22] hover:bg-[#3D74B6] text-white px-4 py-3 text-2xl"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="inline-flex items-center justify-center rounded-lg bg-[#DC3C22] hover:bg-[#3D74B6] text-white px-4 py-3 text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- what i do -->
+     <section id="whatIDo" class="bg-[#3D74B6]">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#DC3C22]">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-azka text-white underline underline-offset-8 decoration-[#DC3C22] decoration-4 uppercase tracking-widest">What I Do</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 grid rounded-full bg-[#DC3C22] text-white place-items-center"><i class="fa-solid fa-computer"></i></div>
+                         <h3 class="text-[#3D74B6[]] font-azka font-bold text-lg tracking-wider]">fa-computer</h3>
+                    </div>
+                    <p class="text-[#DC3C22] font-azka">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae laborum dicta sed. Saepe iusto cumque modi, reiciendis sequi, aspernatur voluptatum sint labore accusantium impedit fugit magnam minus inventore aliquam?</p>
+                </div>
+
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 grid rounded-full bg-[#DC3C22] text-white place-items-center"><i class="fa-solid fa-envelope"></i></div>
+                         <h3 class="text-[#3D74B6[]] font-azka font-bold text-lg tracking-wider]">fa-envelope</h3>
+                    </div>
+                    <p class="text-[#DC3C22] font-azka">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae laborum dicta sed. Saepe iusto cumque modi, reiciendis sequi, aspernatur voluptatum sint labore accusantium impedit fugit magnam minus inventore aliquam?</p>
+                </div>
+
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 grid rounded-full bg-[#DC3C22] text-white place-items-center"><i class="fa-solid fa-cloud"></i></div>
+                         <h3 class="text-[#3D74B6[]] font-azka font-bold text-lg tracking-wider]">cloudflare</h3>
+                    </div>
+                    <p class="text-[#DC3C22] font-azka">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae laborum dicta sed. Saepe iusto cumque modi, reiciendis sequi, aspernatur voluptatum sint labore accusantium impedit fugit magnam minus inventore aliquam?</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Portfolio -->
+      <section id="Portfolio" class="bg-[#3D74B6]">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#DC3C22]">
+             <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-azka text-white underline underline-offset-8 decoration-[#DC3C22] decoration-4 uppercase tracking-widest">Portfolio</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                    </div>
+                    <a href="https://youtube.com/">
+                    <img class="rounded-2xl" src="/media/download (14).jpeg" alt="">
+                    <h3 class="text-[#3D74B6[]] font-azka font-bold text-lg tracking-wider] text-center">Pooppy Duck</h3>
+                    <p class="text-[#DC3C22] font-azka">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae laborum dicta sed. Saepe iusto
+                         cumque modi, reiciendis sequi, aspernatur voluptatum sint labore accusantium impedit fugit magnam minus inventore aliquam?</p>
+                    </a>
+                </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                    </div>
+                    <a href="">
+                    <img class="rounded-2xl" src="/media/Duck_.jpeg" alt="">
+                    <h3 class="text-[#3D74B6[]] font-azka font-bold text-lg tracking-wider] text-center">Murder Duck</h3>
+                    <p class="text-[#DC3C22] font-azka">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae laborum dicta sed. Saepe iusto
+                         cumque modi, reiciendis sequi, aspernatur voluptatum sint labore accusantium impedit fugit magnam minus inventore aliquam?</p>
+                    </a>
+                </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                    </div>
+                    <a href="">
+                    <img class="rounded-2xl" src="/media/download (13).jpeg" alt="">
+                    <h3 class="text-[#3D74B6[]] font-azka font-bold text-lg tracking-wider] text-center">Angry Duck</h3>
+                    <p class="text-[#DC3C22] font-azka">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repudiandae laborum dicta sed. Saepe iusto
+                         cumque modi, reiciendis sequi, aspernatur voluptatum sint labore accusantium impedit fugit magnam minus inventore aliquam?</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- My Blog -->
+      <section id="Blog" class="bg-[#DC3C22]">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#3D74B6]">
+             <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-azka text-white underline underline-offset-8 decoration-[#3D74B6] decoration-4 uppercase tracking-widest">My Blog</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6 grid md:grid-cols-2 gap-3 font-bold text-white text-4xl">
+                <div class="flex items-cente mb-3 row-span-2 gap-3">
+                    <h1 class="row-span-1 underline underline-offset-8 decoration-[#DC3C22]">June</h1>
+                    <p class="row-span-2 py-10">24</p>
+                    
+                    </div>
+                <div class=" font-azka text-lg tracking-wider grid md:grid-cols-1 gap-1 justify-items-start text-start">
+                    <h2 class="text-[#3D74B6] mb-1">JANE DOE</h2>
+                    <h1 class="font-bold text-white">Review Jasa Website</h1>
+                    <P class="text-white">Jasa nya bagus, good job dan cepat</P>
+                    <p class="text-[#DC3C22]">Read more</p>
+                </div>
+                </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6 grid md:grid-cols-2 gap-3 font-bold text-white text-4xl">
+                <div class="flex items-cente mb-3 row-span-2 gap-3">
+                    <h1 class="row-span-1 underline underline-offset-8 decoration-[#DC3C22]">July</h1>
+                    <p class="row-span-2 py-10">24</p>
+                    
+                    </div>
+                <div class=" font-azka text-lg tracking-wider grid md:grid-cols-1 gap-1 justify-items-start text-start">
+                    <h2 class="text-[#3D74B6] mb-1">JANE DOE</h2>
+                    <h1 class="font-bold text-white">Review Jasa Website</h1>
+                    <P class="text-white">Jasa nya bagus, good job dan cepat</P>
+                    <p class="text-[#DC3C22]">Read more</p>
+                </div>
+                </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6 grid md:grid-cols-2 gap-3 font-bold text-white text-4xl">
+                <div class="flex items-cente mb-3 row-span-2 gap-3">
+                    <h1 class="row-span-1 underline underline-offset-8 decoration-[#DC3C22]">Aug</h1>
+                    <p class="row-span-2 py-10">24</p>
+                    
+                    </div>
+                <div class=" font-azka text-lg tracking-wider grid md:grid-cols-1 gap-1 justify-items-start text-start">
+                    <h2 class="text-[#3D74B6] mb-1">JANE DOE</h2>
+                    <h1 class="font-bold text-white">Review Jasa Website</h1>
+                    <P class="text-white">Jasa nya bagus, good job dan cepat</P>
+                    <p class="text-[#DC3C22]">Read more</p>
+                </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- My Skill -->
+      <section id="Skill" class="bg-[#3D74B6] text-white py-20 border-t border-[#DC3C22]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-azka text-[#fff]  underline underline-offset-8 decoration-[#DC3C22] decoration-4 uppercase tracking-widest">My Skill</h2>
+            </div>
+            <div class="text-[#fff] py-3 mb-6 leading-10">
+                <h1 class="font-bold text-[#fff] text-5xl">Web Developer</h1>
+                <p>Saya memiliki skill seperti berikut</p>
+            </div>
+            <!-- skill icon -->
+             <div class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 gap-6 justify-center bg-[#3D74B6]">
+                
+                <div class="rounded-xl bg-[#EAC8A6] shadow-2xl p-6 flex items-center justify-center">
+                <img src="media/AI_Logo__Adobe_Illustrator____Design_Week___Logobutik-removebg-preview.png" alt="adobe ilustrator" class="h-15 w-16 items-center">
+             </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-2xl p-6 flex items-center justify-center">
+                <img src="media/Adobe_Photoshop_Icon_PNG-removebg-preview.png" alt="adobe ilustrator" class="h-15 w-16 items-center">
+             </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-2xl p-6 flex items-center justify-center">
+                <img src="media/Html-removebg-preview.png" alt="adobe ilustrator" class="h-15 w-16 items-center">
+             </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-2xl p-6 flex items-center justify-center">
+                <img src="media/JS Logo - Javascript SDK - PNG Logo Vector Brand Downloads (SVG, EPS).jpeg" alt="adobe ilustrator" class="h-15 w-16 items-center">
+             </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-2xl p-6 flex items-center justify-center">
+                <img src="media/Adobe XD logo vector (_EPS +  (1).SVG) for free download" alt="adobe ilustrator" class="h-15 w-16 items-center">
+             </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-2xl p-6 flex items-center justify-center">
+                <img src="media/download__15_-removebg-preview.png" alt="adobe ilustrator" class="h-15 w-16 items-center">
+             </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-2xl p-6 flex items-center justify-center">
+                <img src="media/_Sketch_3_Sketch_3を使いこなすためリンクやメモ-removebg-preview.png" alt="adobe ilustrator" class="h-15 w-16 items-center">
+             </div>
+                <div class="rounded-xl bg-[#EAC8A6] shadow-2xl p-6 flex items-center justify-center">
+                <img src="media/Figma_Logo___SVG___Real_Company___Alphabet__Letter_F_Logo-removebg-preview.png" alt="adobe ilustrator" class="h-15 w-16 items-center">
+             </div>
+            
+             </div>
+        </div>
+      </section>
+
+      <!-- Contact Me -->
+       <section id="Contact Me" class="bg-[#EAC8A6] text-white py-20 border-t border-[#3D74B6]">
+        <div class="max-w-xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-azka text-white underline underline-offset-8 decoration-[#3D74B6] decoration-2 uppercase
+                tracking-wider">Contact Me</h2>
+                <p class="mt-2 text-white">Contact us for more information</p>
+            </div>
+
+            <form class="bg-[#3D74B6]  p-6 rounded-lg shadow-2xl space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-white uppercase mb-2">name</label>
+                        <input type="text" placeholder="" class="w-full px-4 py-2 bg-white text-black  rounded border border-amber-600">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-white uppercase mb-2">Email</label>
+                        <input type="text" placeholder="" class="w-full px-4 py-2 bg-white text-black  rounded border border-amber-600">
+                    </div>
+
+                    <div class="w-full col-span-2">
+                        <label for="email" class="block text-sm font-semibold text-white uppercase mb-2">Message</label>
+                        <input type="text" placeholder="" class="w-full px-4 py-2 bg-white text-black  rounded border border-amber-600">
+                    </div>
+                </div>
+                <a href="#" class="inline-block bg-[#EAC8A6] text-[#3D74B6] font-bold px-6 py-2 rounded hover:bg-[#FBF5DE] transition">Send Message</a>
+            </form>
+        </div>
+       </section>
+
+       <!-- Footer -->
+
+       <section class="bg-[#3D74B6] text-white py-20 border-t border-[#DC3C22]">
+         <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold font-azka text-[#fff]  underline underline-offset-8 decoration-[#DC3C22] decoration-4 uppercase tracking-widest">Maps</h2>
+            </div>
+       <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-10 justify-center bg-[#3D74B6]">
+        <div class="rounded-full bg-[#eac8a664] flex justify-center items-center shadow-2xl">
+            <iframe class="rounded-full justify-center items-center flex" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32659972.97130364!2d95.9381051094408!3d-2.2239550187028607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sid!2sid!4v1756994178909!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+         <div class="rounded-xl bg-[#EAC8A6] shadow-8xl p-6">
+                    <div class="flex items-center justify-center gap-3 mb-3">
+                    </div>
+                    <a href="https://youtube.com/">
+                    <img class="rounded-2xl" src="/media/download (16).jpeg" alt="">
+                    <h3 class="text-[#3D74B6[]] font-azka font-bold text-lg tracking-wider] text-center">Indonesia</h3>
+                    <p class="text-[#DC3C22] font-azka">Indonesia, officially the Republic of Indonesia, is a country in Southeast Asia and Oceania, located between the Indian and Pacific Oceans. It is a transcontinental country, sandwiched between the continents of Asia and Australia.</p>
+                    </a>
+                </div>
+       </div>
+       <div class="wrapper text-center justify-center pt-10">&copy; 2025 Programming with AzkaArwa</div>
+       </section>
+       
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      AOS.init({
+        duration: reduceMotion ? 0 : 600,
+        once: true,
+      });
+
+      const btn = document.getElementById("hamburger");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const menu = document.getElementById("main-menu");
+      const panel = document.getElementById("mobile-panel");
+
+      btn?.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+        panel.classList.toggle("hidden");
+      });
+
+      panel?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+          panel.classList.add("hidden");
+        });
+      });
+    </script>
+</body>
+</html>
